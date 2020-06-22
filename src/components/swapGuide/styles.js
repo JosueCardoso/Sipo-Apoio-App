@@ -17,5 +17,6 @@ export const TranslatedText = styled.Text`
 `;
 
 export const Title = styled.Text`
-
+    font-size: 18px;
+    text-align: center;
 `;

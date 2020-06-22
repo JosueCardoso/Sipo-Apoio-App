@@ -8,5 +8,10 @@ export default {
     numbersMenu: 'Resansman ak lajan',
     informationMenu: 'Enfòmasyon sipò',
     networkMenu: 'Rezo', 
-    toBack: 'Retounen'
+    toBack: 'Retounen',
+    salutation: 'Bonjou',
+    transport: 'transpò',
+    inHotel: 'Nan otèl la',
+    airportAndBusStation: 'Aryopò e estasyon',
+    location: 'Kote'
   }

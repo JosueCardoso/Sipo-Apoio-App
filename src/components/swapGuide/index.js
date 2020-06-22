@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, ContainerPhrase, OriginalText, TranslatedText, Title } from './styles';//TODO: estilizar os componentes
+import { Container, ContainerPhrase, OriginalText, TranslatedText, Title } from './styles';
 
 const swapGuide = ({phrases, title}) => {    
     let elements = []

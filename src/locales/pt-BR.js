@@ -8,5 +8,10 @@ export default {
     numbersMenu: 'Números e Moeda',
     informationMenu: 'Informações',
     networkMenu: 'Rede de contatos',
-    toBack: 'Voltar'
+    toBack: 'Voltar',
+    salutation: 'Saudações',
+    transport: 'Transporte',
+    inHotel: 'No hotel',
+    airportAndBusStation: 'Aeroporto e rodoviária',
+    location: 'Localização'
   }

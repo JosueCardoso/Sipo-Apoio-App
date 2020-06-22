@@ -5,21 +5,21 @@ import SwapGuide from '../../components/swapGuide'
 import { SalutationPhrases, TransportPhrases, LocationPhrases, AirportAndBusStationPhrases, InHotelPhrases } from './phrases'
 
 export const Salutation = () => { 
-    return <SwapGuide phrases={SalutationPhrases} title={translate('toBack')}/>//TODO: Adicionar um título de verdade
+    return <SwapGuide phrases={SalutationPhrases} title={translate('salutation')}/>
 };
 
 export const Transport = () => { 
-    return <SwapGuide phrases={TransportPhrases} title={translate('toBack')}/>
+    return <SwapGuide phrases={TransportPhrases} title={translate('transport')}/>
 };
 
 export const Location = () => { 
-    return <SwapGuide phrases={LocationPhrases} title={translate('toBack')}/>
+    return <SwapGuide phrases={LocationPhrases} title={translate('location')}/>
 };
 
 export const AirportAndBusStation = () => { 
-    return <SwapGuide phrases={AirportAndBusStationPhrases} title={translate('toBack')}/>
+    return <SwapGuide phrases={AirportAndBusStationPhrases} title={translate('airportAndBusStation')}/>
 };
 
 export const InHotel = () => { 
-    return <SwapGuide phrases={InHotelPhrases} title={translate('toBack')}/>
+    return <SwapGuide phrases={InHotelPhrases} title={translate('inHotel')}/>
 };
