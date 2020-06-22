@@ -22,7 +22,7 @@ const index = ({ navigation }) => {
 
         return (    
             <>  
-                <StatusBar translucent backgroundColor="transparent" barStyle="default"/>
+                <StatusBar translucent backgroundColor="#D21034" barStyle="default"/>
                 <Circle firstCircle={true}/>      
                 <Circle firstCircle={false}/>      
                 <ScrollView>                    

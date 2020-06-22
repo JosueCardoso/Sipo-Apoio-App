@@ -8,4 +8,5 @@ export default {
     numbersMenu: 'Números e Moeda',
     informationMenu: 'Informações',
     networkMenu: 'Rede de contatos',
+    toBack: 'Voltar'
   }

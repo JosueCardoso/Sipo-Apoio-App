@@ -1,13 +1,23 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 
-// import { Container } from './styles';
+import { translate } from '../../locales'
 
-const phraseGuide = () => {
+import { Container, ContainerTabs, ContainerHeader, ContainerBackButton, TitleScreen, BackButton } from './styles';
+
+const phraseGuide = ({ navigation }) => {
   return (
-      <View>
-          <Text>Carai borracha</Text>
-      </View>
+      <Container>
+          <ContainerHeader>
+            <ContainerBackButton onPress={() => navigation.navigate('home')}>
+              <BackButton>{translate('toBack')}</BackButton>
+            </ContainerBackButton>
+            <TitleScreen>{translate('phraseGuideMenu')}</TitleScreen>
+          </ContainerHeader>
+          
+          <ContainerTabs>
+
+          </ContainerTabs>
+      </Container>
   );
 }
 

@@ -8,4 +8,5 @@ export default {
     numbersMenu: 'Resansman ak lajan',
     informationMenu: 'Enfòmasyon sipò',
     networkMenu: 'Rezo', 
+    toBack: 'Retounen'
   }
