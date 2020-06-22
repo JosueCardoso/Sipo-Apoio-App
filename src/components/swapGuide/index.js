@@ -1,6 +1,7 @@
 import React from 'react';
+import { StyleSheet, ScrollView } from 'react-native';
 
-import { Container, ContainerPhrase, OriginalText, TranslatedText, Title } from './styles';
+import { Container, ContainerPhrase, ContainerScroll, OriginalText, TranslatedText, Title } from './styles';
 
 const swapGuide = ({phrases, title}) => {    
     let elements = []
@@ -8,7 +9,7 @@ const swapGuide = ({phrases, title}) => {
 
     for(let i = 0; i < maxCount; i++){
         elements.push(
-            <ContainerPhrase key={"container" + i}>
+            <ContainerPhrase style={styles.shadowContainerStyle} key={"container" + i}>
                 <OriginalText key={"original" + i}>{phrases.pt_br[i]}</OriginalText>
                 <TranslatedText key={"translated" + i}>{phrases.ht_hat[i]}</TranslatedText>
             </ContainerPhrase>
@@ -18,9 +19,21 @@ const swapGuide = ({phrases, title}) => {
   return (
      <Container>
         <Title>{title}</Title>
-       {elements}
+        <ContainerScroll>
+            {elements}
+        </ContainerScroll>       
      </Container>
   );
 }
+
+const styles = StyleSheet.create({
+    shadowContainerStyle: {
+      shadowColor: '#000000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.9,
+      shadowRadius: 3,
+      elevation: 3,
+    } 
+  })
 
 export default swapGuide;
