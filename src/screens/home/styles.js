@@ -6,7 +6,7 @@ export const Container = styled.View`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 40px;
 `;
 

@@ -1,6 +1,7 @@
 import { Platform, NativeModules } from 'react-native'
 import I18n from 'i18n-js'
 import pt from './pt-BR' // importa o objeto de traduções para o idioma português
+import ht from './ht-HAT'
 
 // Função que irá nos auxiliar a normalizar as traduções que serão recebidas pela função getLanguageByDevice
 // Isso é necessário pois no android e no iOS o retorno do mesmo idioma pode ser diferente
@@ -8,6 +9,7 @@ import pt from './pt-BR' // importa o objeto de traduções para o idioma portug
 const normalizeTranslate = {
   'pt_BR': 'pt_BR',
   'pt_US': 'pt_BR',
+  'ht_HT': 'ht_HT',
 }
 
 // Função responsável por adquirir o idioma utilizado no device
@@ -20,9 +22,10 @@ const getLanguageByDevice = () => {
 // Aqui setamos os idiomas que o I18N irá dar suporte
 I18n.translations = {
   'pt_BR': pt,
+  'ht_HT': ht,
 }
 
-// Função responsável por verificar se o idioma atual do divice está sendo suportado, caso não ele irá setar como 'en_US'
+// Função responsável por verificar se o idioma atual do divice está sendo suportado, caso não ele irá setar como 'pt_BR'
 const setLanguageToI18n = () => {
   const language = getLanguageByDevice()
   const translateNormalize = normalizeTranslate[language]

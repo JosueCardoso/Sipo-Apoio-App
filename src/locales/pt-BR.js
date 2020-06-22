@@ -1,5 +1,4 @@
-export default {
-    hello: 'Olá Mundo',
+export default {   
     phraseGuideMenu: 'Guia de frases',
     wordGuideMenu: 'Guia de palavras',
     legalizeSituationMenu: 'Como legalizar sua situação',
