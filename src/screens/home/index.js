@@ -7,16 +7,16 @@ import Icon from '../../components/icon'
 
 import {Container, Circle, ContainerRight, ContainerLeft} from './styles'
 
-export default class index extends Component {
-    render() {   
+const index = ({ navigation }) => {
+     
         let elementsLeft = []
         let elementsRight = []
         
         for(let i = 0; i < MenuFactory.length; i++){
             if(i % 2 == 0){
-                elementsRight.push(<Icon key={MenuFactory[i].id} text={translate(MenuFactory[i].text)} icon={MenuFactory[i].icon}/>)
+                elementsRight.push(<Icon key={MenuFactory[i].id} text={translate(MenuFactory[i].text)} icon={MenuFactory[i].icon} onPress={() => MenuFactory[i].existScreen ? navigation.navigate(MenuFactory[i].name) : null}/>)
             }else{
-                elementsLeft.push(<Icon key={MenuFactory[i].id} text={translate(MenuFactory[i].text)} icon={MenuFactory[i].icon}/>)
+                elementsLeft.push(<Icon key={MenuFactory[i].id} text={translate(MenuFactory[i].text)} icon={MenuFactory[i].icon} onPress={() => MenuFactory[i].existScreen ? navigation.navigate(MenuFactory[i].name) : null}/>)
             }                
         }
 
@@ -38,5 +38,7 @@ export default class index extends Component {
                 </ScrollView>   
             </>
         )
-    }
+    
 }
+
+export default index;

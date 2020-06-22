@@ -1,14 +1,16 @@
 import React from 'react';
-import { View, TouchableOpacity,StyleSheet, StatusBar } from 'react-native';
+import { StyleSheet, TouchableOpacity} from 'react-native';
 import { SvgXml } from 'react-native-svg';
 import { Container, Text } from './styles';
 
-const icon = ({text, icon}) => {
+const icon = ({text, icon, onPress}) => {
   return (
-    <Container style={styles.shadowContainerStyle}>  
-      <SvgXml xml={icon} width="50%" height="50%" />
+    <TouchableOpacity onPress={onPress}>
+      <Container style={styles.shadowContainerStyle} >      
+        <SvgXml xml={icon} width="50%" height="50%" />
         <Text>{text}</Text>
-    </Container>
+      </Container>
+    </TouchableOpacity>
   );
 }
 
