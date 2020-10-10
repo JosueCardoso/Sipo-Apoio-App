@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
-import { TouchableOpacity, View } from 'react-native';
+import { TouchableOpacity, StatusBar } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
 import SwapOnboarding from '../../components/swapOnboarding'
 import { Container, Text, ContainerButtons } from './styles';
 import IndexCurrentScreen from './indexCurrentScreen'
+import { translate } from '../../locales'
+import OnboardingIcons from '../../assets/images'
 
 const Tab = createMaterialTopTabNavigator();
 
-const OnboardingOne = () => { return <SwapOnboarding title={"one"} /> }
-const OnboardingTwo = () => { return <SwapOnboarding title={"two"} /> }
-const OnboardingThree = () => { return <SwapOnboarding title={"three"} /> }
+const OnboardingOne = () => { return <SwapOnboarding title={translate("welcomeToBrazil")} img={OnboardingIcons.find(value => value.name === "brazilMap").value} /> }
+const OnboardingTwo = () => { return <SwapOnboarding title={translate("helloFriend")} description={translate("thisAppFinally")} img={OnboardingIcons.find(value => value.name === "map").value} /> }
+const OnboardingThree = () => { return <SwapOnboarding description={translate("thisAppObjective")} img={OnboardingIcons.find(value => value.name === "mountain").value} /> }
 
 const onboarding = ({ navigation }) => {
-    const [textButton, setTextButton] = useState("Próximo");
+    const [textPreviousButton, setPreviousTextButton] = useState("");
+    const [textNextButton, setNextTextButton] = useState(translate("next"));
 
     const getScreen = () => {
         switch (IndexCurrentScreen.currentScreen) {
@@ -33,8 +36,10 @@ const onboarding = ({ navigation }) => {
         }
 
         if (IndexCurrentScreen.currentScreen == 2)
-            setTextButton("Próximo");
+            setNextTextButton(translate("next"));
 
+        if (IndexCurrentScreen.currentScreen == 1)
+            setPreviousTextButton("");
     }
 
     const next = () => {
@@ -44,7 +49,10 @@ const onboarding = ({ navigation }) => {
         }
 
         if (IndexCurrentScreen.currentScreen == 3)
-            setTextButton("Concluir");
+            setNextTextButton(translate("conclude"))
+
+        if (IndexCurrentScreen.currentScreen == 2)
+            setPreviousTextButton(translate("previous"));
     }
 
     const goToHome = () => {
@@ -52,18 +60,21 @@ const onboarding = ({ navigation }) => {
     }
 
     return (
-        <Container>
-            <Tab.Navigator tabBarOptions={{ style: { display: "none" } }} sceneContainerStyle={{ backgroundColor: 'transparent', padding: 20 }}>
-                <Tab.Screen name="onboardingOne" component={OnboardingOne} />
-                <Tab.Screen name="onboardingTwo" component={OnboardingTwo} />
-                <Tab.Screen name="onboardingThree" component={OnboardingThree} />
-            </Tab.Navigator>
+        <>
+            <StatusBar translucent backgroundColor="transparent" barStyle="default" />
+            <Container>
+                <Tab.Navigator swipeEnabled={false} tabBarOptions={{ style: { display: "none" } }} sceneContainerStyle={{ backgroundColor: 'transparent', padding: 20 }}>
+                    <Tab.Screen name="onboardingOne" component={OnboardingOne} />
+                    <Tab.Screen name="onboardingTwo" component={OnboardingTwo} />
+                    <Tab.Screen name="onboardingThree" component={OnboardingThree} />
+                </Tab.Navigator>
 
-            <ContainerButtons>
-                <TouchableOpacity isFirstScreen={IndexCurrentScreen.currentScreen == 1} onPress={() => previous()}><Text>Anterior</Text></TouchableOpacity>
-                <TouchableOpacity onPress={() => IndexCurrentScreen.currentScreen == 3 ? goToHome() : next()}><Text>{textButton}</Text></TouchableOpacity>
-            </ContainerButtons>
-        </Container>
+                <ContainerButtons>
+                    <TouchableOpacity isFirstScreen={IndexCurrentScreen.currentScreen == 1} onPress={() => previous()}><Text>{textPreviousButton}</Text></TouchableOpacity>
+                    <TouchableOpacity onPress={() => IndexCurrentScreen.currentScreen == 3 ? goToHome() : next()}><Text>{textNextButton}</Text></TouchableOpacity>
+                </ContainerButtons>
+            </Container>
+        </>
     );
 }
 

@@ -1,12 +1,17 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { SvgXml } from 'react-native-svg';
 
-import { Container } from './styles';
+import { Container, TitleText, DescriptionText, ContainerImage } from './styles';
 
-const swapOnboarding = ({title}) => {
+const swapOnboarding = ({ title, description, img }) => {
   return (
     <Container>
-        <Text>{title}</Text>
+      <ContainerImage>
+        <SvgXml xml={img} width="90%" height="90%" />
+      </ContainerImage>
+
+      <TitleText>{title}</TitleText>
+      <DescriptionText>{description}</DescriptionText>
     </Container>
   );
 }

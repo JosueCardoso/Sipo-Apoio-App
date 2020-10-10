@@ -11,15 +11,15 @@ import Onboarding from './src/screens/onboarding'
 const Stack = createStackNavigator();
 
 const App = () => {
-  return (    
-    <NavigationContainer>      
+  return (
+    <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen options={{ headerShown: false }} name="onboarding" component={Onboarding} />
         <Stack.Screen options={{ headerShown: false }} name="home" component={Home} />
         <Stack.Screen options={{ headerShown: false }} name="phraseGuide" component={PhraseGuide} />
         <Stack.Screen options={{ headerShown: false }} name="wordGuide" component={WordGuide} />
       </Stack.Navigator>
-    </NavigationContainer>    
+    </NavigationContainer>
   );
 };
 
