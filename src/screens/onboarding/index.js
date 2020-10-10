@@ -16,7 +16,6 @@ const onboarding = ({ navigation }) => {
     const [textButton, setTextButton] = useState("Próximo");
 
     const getScreen = () => {
-        console.log("swith: " + IndexCurrentScreen.currentScreen);
         switch (IndexCurrentScreen.currentScreen) {
             case 1:
                 return "onboardingOne";

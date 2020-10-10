@@ -8,6 +8,7 @@ const menuFactory = [
         text: 'phraseGuideMenu',
         icon: MenuIcons.find(value => value.name === "phraseGuide").value,
         existScreen: true,
+        url: ""
     },
     {
         id: 2,
@@ -15,6 +16,7 @@ const menuFactory = [
         text: 'wordGuideMenu',
         icon: MenuIcons.find(value => value.name === "wordGuide").value,
         existScreen: false,
+        url: ""
     },
     {
         id: 3,
@@ -22,6 +24,7 @@ const menuFactory = [
         text: 'legalizeSituationMenu',
         icon: MenuIcons.find(value => value.name === "legalizeSituation").value,
         existScreen: false,
+        url: ""
     },
     {
         id: 4,
@@ -29,6 +32,7 @@ const menuFactory = [
         text: 'validateStudiesMenu',
         icon: MenuIcons.find(value => value.name === "validateStudies").value,
         existScreen: false,
+        url: ""
     },
     {
         id: 5,
@@ -36,6 +40,7 @@ const menuFactory = [
         text: 'brazilMapMenu',
         icon: MenuIcons.find(value => value.name === "brazilMap").value,
         existScreen: false,
+        url: "https://www.google.com.br/maps"
     },
     {
         id: 6,
@@ -43,6 +48,7 @@ const menuFactory = [
         text: 'jobsMenu',
         icon: MenuIcons.find(value => value.name === "jobs").value,
         existScreen: false,
+        url: "https://empregabrasil.mte.gov.br/"
     },
     {
         id: 7,
@@ -50,6 +56,7 @@ const menuFactory = [
         text: 'numbersMenu',
         icon: MenuIcons.find(value => value.name === "money").value,
         existScreen: false,
+        url: ""
     },
     {
         id: 8,
@@ -57,6 +64,7 @@ const menuFactory = [
         text: 'informationMenu',
         icon: MenuIcons.find(value => value.name === "information").value,
         existScreen: false,
+        url: ""
     },
     {
         id: 9,
@@ -64,6 +72,7 @@ const menuFactory = [
         text: 'networkMenu',
         icon: MenuIcons.find(value => value.name === "network").value,
         existScreen: false,
+        url: ""
     },
 ]
 
