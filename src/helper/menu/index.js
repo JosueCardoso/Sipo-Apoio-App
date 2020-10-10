@@ -14,7 +14,7 @@ const menuFactory = [
         name: 'wordGuide',
         text: 'wordGuideMenu',
         icon: MenuIcons.find(value => value.name === "wordGuide").value,
-        existScreen: true,
+        existScreen: false,
     },
     {
         id: 3,
