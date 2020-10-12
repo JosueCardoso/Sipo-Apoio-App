@@ -7,6 +7,7 @@ import { Container, Text, ContainerButtons } from './styles';
 import IndexCurrentScreen from './indexCurrentScreen'
 import { translate } from '../../locales'
 import OnboardingIcons from '../../assets/images'
+import OnboardingDots from '../../components/onboardingDots'
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -68,7 +69,7 @@ const onboarding = ({ navigation }) => {
                     <Tab.Screen name="onboardingTwo" component={OnboardingTwo} />
                     <Tab.Screen name="onboardingThree" component={OnboardingThree} />
                 </Tab.Navigator>
-
+                <OnboardingDots currentScreenIndex={IndexCurrentScreen.currentScreen} />
                 <ContainerButtons>
                     <TouchableOpacity isFirstScreen={IndexCurrentScreen.currentScreen == 1} onPress={() => previous()}><Text>{textPreviousButton}</Text></TouchableOpacity>
                     <TouchableOpacity onPress={() => IndexCurrentScreen.currentScreen == 3 ? goToHome() : next()}><Text>{textNextButton}</Text></TouchableOpacity>
