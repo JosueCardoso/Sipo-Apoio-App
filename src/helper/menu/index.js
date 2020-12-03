@@ -28,10 +28,10 @@ const menuFactory = [
     },
     {
         id: 4,
-        name: 'validateStudies',
+        name: 'validateSchooling',
         text: 'validateStudiesMenu',
         icon: MenuIcons.find(value => value.name === "validateStudies").value,
-        existScreen: false,
+        existScreen: true,
         url: ""
     },
     {
@@ -65,15 +65,7 @@ const menuFactory = [
         icon: MenuIcons.find(value => value.name === "information").value,
         existScreen: false,
         url: ""
-    },
-    {
-        id: 9,
-        name: 'network',
-        text: 'networkMenu',
-        icon: MenuIcons.find(value => value.name === "network").value,
-        existScreen: false,
-        url: ""
-    },
+    }
 ]
 
 export default menuFactory;

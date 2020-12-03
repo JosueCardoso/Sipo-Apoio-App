@@ -20,5 +20,8 @@ export default {
   thisAppObjective: 'Objetivo desse aplicativo é facilitar a comunicação em diversas situações as quais possam ser vivenciadas em seu novo país',
   next: 'Próximo',
   previous: 'Anterior',
-  conclude: 'Concluir'
+  conclude: 'Concluir',
+  validateSchoolingText1: 'Para a validação de seus estudos, você deve fazer a solicitação na secretaria de educação de estado, através da secretaria regional de estado mais próxima.',
+  validateSchoolingText2: 'Em caso de dúvida de onde encontrar, procure informações na escola estadual mais próxima de sua casa.',
+  forMoreInformation: 'Para mais informações acesse'
 }
