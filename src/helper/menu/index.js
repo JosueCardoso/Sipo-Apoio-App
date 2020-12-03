@@ -23,7 +23,7 @@ const menuFactory = [
         name: 'legalizeSituation',
         text: 'legalizeSituationMenu',
         icon: MenuIcons.find(value => value.name === "legalizeSituation").value,
-        existScreen: false,
+        existScreen: true,
         url: ""
     },
     {

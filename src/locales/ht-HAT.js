@@ -23,5 +23,6 @@ export default {
   conclude: 'Konklizyon',
   validateSchoolingText1: 'Pou validasyon etid ou yo, ou dwe aplike nan depatman edikasyon leta, nan depatman leta rejyonal ki pi pre a.',
   validateSchoolingText2: 'Si ou gen dout sou ki kote yo jwenn li, jwenn enfòmasyon nan lekòl leta ki pi pre lakay ou.',
-  forMoreInformation: 'Pou plis enfòmasyon aksè'
+  forMoreInformation: 'Pou plis enfòmasyon aksè',
+  legalizeSituationText1: 'Pou aplike pou sitwayènte tanporè ou nan Brezil, ou dwe ale nan polis federal ki pi pre a, ansanm ak dokiman pèsonèl ou ak 2 foto 3x4.'
 }

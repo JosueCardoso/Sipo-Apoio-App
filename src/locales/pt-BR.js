@@ -23,5 +23,6 @@ export default {
   conclude: 'Concluir',
   validateSchoolingText1: 'Para a validação de seus estudos, você deve fazer a solicitação na secretaria de educação de estado, através da secretaria regional de estado mais próxima.',
   validateSchoolingText2: 'Em caso de dúvida de onde encontrar, procure informações na escola estadual mais próxima de sua casa.',
-  forMoreInformation: 'Para mais informações acesse'
+  forMoreInformation: 'Para mais informações acesse',
+  legalizeSituationText1: 'Para solicitar sua cidadania temporária no Brasil, você deve ir até a polícia federal mais próxima, munido de seus documentos pessoais e 2 fotos 3x4.',
 }

@@ -8,6 +8,7 @@ import PhraseGuide from './src/screens/phraseGuide'
 import WordGuide from './src/screens/wordGuide'
 import Onboarding from './src/screens/onboarding'
 import ValidateSchooling from './src/screens/validateSchooling'
+import LegalizeSituation from './src/screens/legalizeSituation'
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,7 @@ const App = () => {
         <Stack.Screen options={{ headerShown: false }} name="phraseGuide" component={PhraseGuide} />
         <Stack.Screen options={{ headerShown: false }} name="wordGuide" component={WordGuide} />
         <Stack.Screen options={{ headerShown: false }} name="validateSchooling" component={ValidateSchooling} />
+        <Stack.Screen options={{ headerShown: false }} name="legalizeSituation" component={LegalizeSituation} />
       </Stack.Navigator>
     </NavigationContainer>
   );
