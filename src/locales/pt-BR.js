@@ -31,4 +31,7 @@ export default {
   informationText4: 'O aplicativo tem como objetivo trazer maior comodidade aos imigrantes haitianos, assim como facilitar sua comunicação no Brasil, visando o bem social. ',
   informationText5: 'Desde já a todos os usuários o meu agradecimento.',
   informationText6: 'Lages, Santa Catarina, Brasil.',
+  numbers: 'Números',
+  months: 'Meses do ano',
+  currency: 'Moeda'
 }

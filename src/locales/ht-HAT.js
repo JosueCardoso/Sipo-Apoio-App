@@ -30,6 +30,8 @@ export default {
   informationText3: 'Aplikasyon an te gen èd imigran ayisyen Eddy Joseph tou nan seksyon tradiksyon an.',
   informationText4: 'Aplikasyon an gen pou objaktif pou pote pi gwo konvenyans nan imigran ayisyen yo osi byen ke fasilite kominikasyon yo nan Brezil, vise nan byen sosyal la.',
   informationText5: 'Mèsi a tout itilizatè yo.',
-  informationText6: 'Lages, Santa Catarina, Brezil. '
-
+  informationText6: 'Lages, Santa Catarina, Brezil.',
+  numbers: 'Nimewo',
+  months: 'Mwa nan ane a',
+  currency: 'lajan'
 }

@@ -55,7 +55,7 @@ const menuFactory = [
         name: 'numbers',
         text: 'numbersMenu',
         icon: MenuIcons.find(value => value.name === "money").value,
-        existScreen: false,
+        existScreen: true,
         url: ""
     },
     {
