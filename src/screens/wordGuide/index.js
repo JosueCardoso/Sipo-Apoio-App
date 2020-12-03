@@ -1,13 +1,21 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 
-// import { Container } from './styles';
+import { translate } from '../../locales'
+import { Container, ContainerHeader, ContainerBackButton, TitleScreen, BackButton } from './styles';
+import Accordion from '../../components/accordion'
 
-const wordGuide = () => {
+const wordGuide = ({ navigation }) => {
   return (
-    <View>
-      <Text>Borracha carai</Text>
-    </View>
+    <Container>
+      <ContainerHeader>
+        <ContainerBackButton onPress={() => navigation.navigate('home')}>
+          <BackButton>{translate('toBack')}</BackButton>
+        </ContainerBackButton>
+        <TitleScreen>{translate('wordGuideMenu')}</TitleScreen>
+      </ContainerHeader>
+
+      <Accordion />
+    </Container>
   );
 }
 
