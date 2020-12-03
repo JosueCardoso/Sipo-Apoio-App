@@ -25,4 +25,10 @@ export default {
   validateSchoolingText2: 'Em caso de dúvida de onde encontrar, procure informações na escola estadual mais próxima de sua casa.',
   forMoreInformation: 'Para mais informações acesse',
   legalizeSituationText1: 'Para solicitar sua cidadania temporária no Brasil, você deve ir até a polícia federal mais próxima, munido de seus documentos pessoais e 2 fotos 3x4.',
+  informationText1: 'O aplicativo teve origem no programa de mestrado em práticas transculturais do Centro Universitário UniFacvest, através do projeto do mestrando Bruno Muniz Silva, orientado por Dra Arceloni Neusa Volpato e co-orientado por Dra Soeli Satub zembruski.',
+  informationText2: 'Toda parte técnica do aplicativo ficou por conta do desenvolvedor Josué Cardoso.',
+  informationText3: 'O aplicativo também contou com a ajuda do imigrante haitiano Eddy Joseph na parte das traduções. ',
+  informationText4: 'O aplicativo tem como objetivo trazer maior comodidade aos imigrantes haitianos, assim como facilitar sua comunicação no Brasil, visando o bem social. ',
+  informationText5: 'Desde já a todos os usuários o meu agradecimento.',
+  informationText6: 'Lages, Santa Catarina, Brasil.',
 }

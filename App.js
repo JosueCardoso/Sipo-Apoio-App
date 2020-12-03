@@ -9,6 +9,7 @@ import WordGuide from './src/screens/wordGuide'
 import Onboarding from './src/screens/onboarding'
 import ValidateSchooling from './src/screens/validateSchooling'
 import LegalizeSituation from './src/screens/legalizeSituation'
+import Information from './src/screens/information'
 
 const Stack = createStackNavigator();
 
@@ -22,6 +23,7 @@ const App = () => {
         <Stack.Screen options={{ headerShown: false }} name="wordGuide" component={WordGuide} />
         <Stack.Screen options={{ headerShown: false }} name="validateSchooling" component={ValidateSchooling} />
         <Stack.Screen options={{ headerShown: false }} name="legalizeSituation" component={LegalizeSituation} />
+        <Stack.Screen options={{ headerShown: false }} name="information" component={Information} />
       </Stack.Navigator>
     </NavigationContainer>
   );

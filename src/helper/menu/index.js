@@ -63,7 +63,7 @@ const menuFactory = [
         name: 'information',
         text: 'informationMenu',
         icon: MenuIcons.find(value => value.name === "information").value,
-        existScreen: false,
+        existScreen: true,
         url: ""
     }
 ]
